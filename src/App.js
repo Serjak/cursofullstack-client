@@ -14,7 +14,7 @@ function App() {
 						path={route.path}
 						element={
 							<route.layout>
-								<route.element />
+								<route.component />
 							</route.layout>
 						}
 					/>

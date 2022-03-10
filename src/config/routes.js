@@ -15,17 +15,17 @@ const routesAdmin = [
 	{
 		path: "/admin",
 		layout: LayoutAdmin,
-		element: AdminHome,
+		component: AdminHome,
 	},
 	{
 		path: "/admin/login",
 		layout: LayoutAdmin,
-		element: AdminSignIn,
+		component: AdminSignIn,
 	},
 	{
 		path: "/admin/*",
 		layout: LayoutAdmin,
-		element: Error404,
+		component: Error404,
 	},
 ];
 
@@ -33,17 +33,17 @@ const routesClient = [
 	{
 		path: "/",
 		layout: LayoutBasic,
-		element: Home,
+		component: Home,
 	},
 	{
 		path: "/contact",
 		layout: LayoutBasic,
-		element: Contact,
+		component: Contact,
 	},
 	{
 		path: "/*",
 		layout: LayoutBasic,
-		element: Error404,
+		component: Error404,
 	},
 ];
 
