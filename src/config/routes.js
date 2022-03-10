@@ -13,13 +13,13 @@ import Error404 from "../pages/Error404";
 
 const routesAdmin = [
 	{
-		path: "/admin",
+		path: "/admin/",
 		layout: LayoutAdmin,
 		component: AdminHome,
 	},
 	{
 		path: "/admin/login",
-		layout: LayoutAdmin,
+		layout: AdminSignIn,
 		component: AdminSignIn,
 	},
 	{
