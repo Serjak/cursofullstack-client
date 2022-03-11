@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, Tabs } from "antd";
 import { Navigate } from "react-router-dom";
 import Logo from "../../../assets/img/png/logo-white.png";
+import RegisterForm from "../../../components/Admin/RegisterForm";
 
 import "./SignIn.scss";
 
@@ -15,12 +16,12 @@ export default function SignIn() {
 					<img src={Logo} alt="Sergio Jakimenko" />
 				</h1>
 				<div className="sign-in__content-tabs">
-					<Tabs type="card" centered>
+					<Tabs type="card">
 						<TabPane tab={<span>Entrar</span>} key="1">
 							Componente LoginForm
 						</TabPane>
 						<TabPane tab={<span>Nuevo usuario</span>} key="2">
-							Componente RegisterForm
+							<RegisterForm />
 						</TabPane>
 					</Tabs>
 				</div>
